@@ -1,0 +1,21 @@
+{
+  "name": "arc-icons",
+  "version": "1.0.0",
+  "license": "LICENSE.md",
+  "description": "An icons set for Advanced REST client.",
+  "devDependencies": {
+    "conventional-github-releaser": "^1.1.1",
+    "gulp-conventional-changelog": "^1.1.0",
+    "gulp": "^3.8.5",
+    "gulp-bump": "^2.1.0",
+    "gulp-git": "^1.7.1",
+    "run-sequence": "^1.1.5"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "private": false,
+  "main": [
+    "arc-icons.html"
+  ]
+}
