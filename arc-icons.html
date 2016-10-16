@@ -11,15 +11,30 @@ WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
 License for the specific language governing permissions and limitations under
 the License.
 -->
-
 <link rel="import" href="../polymer/polymer.html">
 <link rel="import" href="../iron-icon/iron-icon.html">
 <link rel="import" href="../iron-iconset-svg/iron-iconset-svg.html">
-
 <!--
-  A set of icons for Advanced REST Client.
--->
+A set of icons for Advanced REST Client.
+This library exists to not import all material/iron icons to the app but only those are required.
 
+Include library into the document / element:
+```
+<link rel="import" href="../arc-icons/arc-icons.html">
+```
+
+To use an icon from this set you mys prefix `iron-icon` with the `arc`, followed by a colon, ":", and then the icon id.
+
+Example using the directions-bus icon from the maps icon set:
+```
+<iron-icon icon="arc:assignment"></iron-icon>
+```
+
+@group UI Elements
+@pseudoElement arc-icons
+@demo demo/index.html
+@hero hero.svg
+-->
 <iron-iconset-svg size="24" name="arc">
 <svg>
   <defs>
@@ -39,9 +54,7 @@ the License.
     <g id="remove-circle-outline"><path d="M7 11v2h10v-2H7zm5-9C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"></path></g>
     <g id="send"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"></path></g>
     <g id="edit"><path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"></path></g>
-    <g id="markdown" transform="matrix(0.04690339,0,0,0.04690339,0,5.225434)">
-      <path d="m 123.38173,73.504 -50.39773,0 0,167.496 52.516,0 0,-93 50,60 47.62725,-60 0,93 49.87275,0 0,-167.496 -49.87276,0 L 175.5,135.5 Z M 39.998409,0 474.00159,0 C 496.08284,0 514,17.906303 514,39.994846 l 0,235.010304 C 514,297.09032 496.0921,315 474.00159,315 L 39.998409,315 C 17.917157,315 0,297.0937 0,275.00515 L 0,39.994846 C 0,17.909682 17.907898,0 39.998409,0 Z M 360,74.5 l -0.49739,0 -1e-5,86 -48.0026,0 74,80.5 74.00256,-80.99442 -49.97984,0 0,-85.50558 z m 0,0" />
-    </g>
+    <g id="markdown" transform="matrix(0.04690339,0,0,0.04690339,0,5.225434)"><path d="m 123.38173,73.504 -50.39773,0 0,167.496 52.516,0 0,-93 50,60 47.62725,-60 0,93 49.87275,0 0,-167.496 -49.87276,0 L 175.5,135.5 Z M 39.998409,0 474.00159,0 C 496.08284,0 514,17.906303 514,39.994846 l 0,235.010304 C 514,297.09032 496.0921,315 474.00159,315 L 39.998409,315 C 17.917157,315 0,297.0937 0,275.00515 L 0,39.994846 C 0,17.909682 17.907898,0 39.998409,0 Z M 360,74.5 l -0.49739,0 -1e-5,86 -48.0026,0 74,80.5 74.00256,-80.99442 -49.97984,0 0,-85.50558 z m 0,0" /></g>
     <g id="spellcheck"><path d="M12.45 16h2.09L9.43 3H7.57L2.46 16h2.09l1.12-3h5.64l1.14 3zm-6.02-5L8.5 5.48 10.57 11H6.43zm15.16.59l-8.09 8.09L9.83 16l-1.41 1.41 5.09 5.09L23 13l-1.41-1.41z"></path></g>
     <g id="visibility"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"></path></g>
     <g id="visibility-off"><path d="M12 7c2.76 0 5 2.24 5 5 0 .65-.13 1.26-.36 1.83l2.92 2.92c1.51-1.26 2.7-2.89 3.43-4.75-1.73-4.39-6-7.5-11-7.5-1.4 0-2.74.25-3.98.7l2.16 2.16C10.74 7.13 11.35 7 12 7zM2 4.27l2.28 2.28.46.46C3.08 8.3 1.78 10.02 1 12c1.73 4.39 6 7.5 11 7.5 1.55 0 3.03-.3 4.38-.84l.42.42L19.73 22 21 20.73 3.27 3 2 4.27zM7.53 9.8l1.55 1.55c-.05.21-.08.43-.08.65 0 1.66 1.34 3 3 3 .22 0 .44-.03.65-.08l1.55 1.55c-.67.33-1.41.53-2.2.53-2.76 0-5-2.24-5-5 0-.79.2-1.53.53-2.2zm4.31-.78l3.15 3.15.02-.16c0-1.66-1.34-3-3-3l-.17.01z"></path></g>
@@ -50,5 +63,17 @@ the License.
     <g id="wrap-text"><path d="M4 19h6v-2H4v2zM20 5H4v2h16V5zm-3 6H4v2h13.25c1.1 0 2 .9 2 2s-.9 2-2 2H15v-2l-3 3 3 3v-2h2c2.21 0 4-1.79 4-4s-1.79-4-4-4z"></path></g>
     <g id="archive"><path d="M20.54 5.23l-1.39-1.68C18.88 3.21 18.47 3 18 3H6c-.47 0-.88.21-1.16.55L3.46 5.23C3.17 5.57 3 6.02 3 6.5V19c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V6.5c0-.48-.17-.93-.46-1.27zM12 17.5L6.5 12H10v-2h4v2h3.5L12 17.5zM5.12 5l.81-1h12l.94 1H5.12z"></path></g>
     <g id="content-copy"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"></path></g>
+    <g id="drive-color" transform="matrix(1.597046e-4,0,0,1.6517796e-4,1.3671875,2.9482084)"><polygon points="133156,76894 110963,115341 22194,115341 44385,76894 " style="fill:#3777e3" /><polygon points="88772,0 44385,0 88772,76894 133156,76894 " style="fill:#ffcf63" /><polygon points="66578,38447 44385,0 0,76894 22194,115341 " style="fill:#11a861" /></g>
+    <g id="drive" transform="matrix(1.597046e-4,0,0,1.6517796e-4,1.3671875,2.9482084)"><polygon points="22194,115341 44385,76894 133156,76894 110963,115341" /><polygon points="88772,76894 133156,76894 88772,0 44385,0" /><polygon points="0,76894 22194,115341 66578,38447 44385,0" /></g>
+    <g id="airport-shuttle"><path d="M17 5H3c-1.1 0-2 .89-2 2v9h2c0 1.65 1.34 3 3 3s3-1.35 3-3h5.5c0 1.65 1.34 3 3 3s3-1.35 3-3H23v-5l-6-6zM3 11V7h4v4H3zm3 6.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm7-6.5H9V7h4v4zm4.5 6.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM15 11V7h1l4 4h-5z"/></g>
+    <g id="sentiment-very-dissatisfied"><path d="M11.99 2C6.47 2 2 6.47 2 12s4.47 10 9.99 10S22 17.53 22 12 17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm4.18-12.24l-1.06 1.06-1.06-1.06L13 8.82l1.06 1.06L13 10.94 14.06 12l1.06-1.06L16.18 12l1.06-1.06-1.06-1.06 1.06-1.06zM7.82 12l1.06-1.06L9.94 12 11 10.94 9.94 9.88 11 8.82 9.94 7.76 8.88 8.82 7.82 7.76 6.76 8.82l1.06 1.06-1.06 1.06zM12 14c-2.33 0-4.31 1.46-5.11 3.5h10.22c-.8-2.04-2.78-3.5-5.11-3.5z"/></g>
+    <g id="sentiment-neutral"><path d="M9 14h6v1.5H9z"/><circle cx="15.5" cy="9.5" r="1.5"/><circle cx="8.5" cy="9.5" r="1.5"/><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"/></g>
+    <g id="notifications-active"><path d="M7.58 4.08L6.15 2.65C3.75 4.48 2.17 7.3 2.03 10.5h2c.15-2.65 1.51-4.97 3.55-6.42zm12.39 6.42h2c-.15-3.2-1.73-6.02-4.12-7.85l-1.42 1.43c2.02 1.45 3.39 3.77 3.54 6.42zM18 11c0-3.07-1.64-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.63 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2v-5zm-6 11c.14 0 .27-.01.4-.04.65-.14 1.18-.58 1.44-1.18.1-.24.15-.5.15-.78h-4c.01 1.1.9 2 2.01 2z"></path></g>
+    <g id="rate-review"><path d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM6 14v-2.47l6.88-6.88c.2-.2.51-.2.71 0l1.77 1.77c.2.2.2.51 0 .71L8.47 14H6zm12 0h-7.5l2-2H18v2z"></path></g>
+    <g id="mode-edit"><path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"></path></g>
+    <g id="keyboard-arrow-down"><path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"></path></g>
+    <g id="keyboard-arrow-up"><path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path></g>
+    <g id="shield" transform="translate(0,-1028.3622)"><circle r="11.962877" cy="1040.3993" cx="11.962877" style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#1c8adb;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.40000001;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" /><path d="m 5.7226134,1035.2177 -5.71610049,5.7162 c 0.25024909,5.9429 3.35576479,9.2981 8.15641339,11.1171 2.1658257,-2.1563 4.3267587,-4.3171 6.4790417,-6.5004 z" style="fill:url(#linearGradient5637);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" inkscape:connector-curvature="0" /><path d="m 11.962898,1033.391 c -2.0501345,1.0013 -4.3555189,1.8135 -6.240256,1.8267 1.1575901,7.1589 1.8218083,9.9255 6.240256,12.1899 4.418427,-2.2644 5.082673,-5.031 6.240258,-12.1899 -1.884728,-0.013 -4.190132,-0.8254 -6.240258,-1.8267 z" style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" inkscape:connector-curvature="0" /><path d="m 11.962878,1033.391 0,7.0084 5.261505,0 c 0.352779,-1.4257 0.64548,-3.121 0.978701,-5.1818 -1.884728,-0.013 -4.19008,-0.8254 -6.240206,-1.8266 z m 0,7.0084 -5.2615633,0 c 0.8727443,3.5268 2.1150231,5.3956 5.2615633,7.0082 l 0,-7.0082 z" style="fill:#000000;fill-opacity:0.13473056;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" inkscape:connector-curvature="0" /></g>
+    <g id="cloud-download"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM17 13l-5 5-5-5h3V9h4v4h3z"></path></g>
   </defs></svg>
 </iron-iconset-svg>
