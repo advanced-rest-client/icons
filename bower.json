@@ -7,8 +7,8 @@
   "keywords": [
     "web-components",
     "polymer",
-    "input",
-    "password"
+    "icons",
+    "advanced-rest-client"
   ],
   "private": true,
   "main": [
@@ -38,5 +38,5 @@
     ".jscsrc",
     ".jshintrc"
   ],
-  "version": "1.0.2"
+  "version": "1.0.3"
 }
