@@ -1,3 +1,6 @@
+[![Build Status](https://travis-ci.org/advanced-rest-client/arc-icons.svg?branch=master)](https://travis-ci.org/advanced-rest-client/arc-icons)  [![Dependency Status](https://dependencyci.com/github/advanced-rest-client/arc-icons/badge)](https://dependencyci.com/github/advanced-rest-client/arc-icons)  
+
+# arc-icons
 
 A set of icons for Advanced REST Client.
 This library exists to not import all material/iron icons to the app but only those are required.
