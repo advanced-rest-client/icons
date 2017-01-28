@@ -1,3 +1,9 @@
+<a name="1.0.13"></a>
+## [1.0.13](https://github.com/advanced-rest-client/arc-icons/compare/1.0.12...v1.0.13) (2017-01-28)
+
+
+
+
 <a name="1.0.12"></a>
 ## [1.0.12](https://github.com/advanced-rest-client/arc-icons/compare/1.0.8...v1.0.12) (2017-01-04)
 
