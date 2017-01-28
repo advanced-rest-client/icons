@@ -1,3 +1,13 @@
+<a name="1.0.14"></a>
+## [1.0.14](https://github.com/advanced-rest-client/arc-icons/compare/1.0.12...v1.0.14) (2017-01-28)
+
+
+### Update
+
+* Added missing icons from ARC ([c6ee20de76806b5a844608d8a7480247cf9d4225](https://github.com/advanced-rest-client/arc-icons/commit/c6ee20de76806b5a844608d8a7480247cf9d4225))
+
+
+
 <a name="1.0.13"></a>
 ## [1.0.13](https://github.com/advanced-rest-client/arc-icons/compare/1.0.12...v1.0.13) (2017-01-28)
 
