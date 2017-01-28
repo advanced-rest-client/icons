@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/advanced-rest-client/arc-icons.svg?branch=master)](https://travis-ci.org/advanced-rest-client/arc-icons)  [![Dependency Status](https://dependencyci.com/github/advanced-rest-client/arc-icons/badge)](https://dependencyci.com/github/advanced-rest-client/arc-icons)  
+[![Build Status](https://travis-ci.org/advanced-rest-client/arc-icons.svg?branch=stage)](https://travis-ci.org/advanced-rest-client/arc-icons)  
 
 # arc-icons
 
