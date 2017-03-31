@@ -1,3 +1,14 @@
+<a name="1.0.15"></a>
+## [1.0.15](https://github.com/advanced-rest-client/arc-icons/compare/1.0.14...v1.0.15) (2017-03-31)
+
+
+### Update
+
+* Added home icon and anypoint pin icon ([c9400239b840f30fa78ed92d3675bd198f2460a2](https://github.com/advanced-rest-client/arc-icons/commit/c9400239b840f30fa78ed92d3675bd198f2460a2))
+* Removed sauce connect option from travis configuration ([29abd97676eb3d99b4e6966441db6d1ab4b22023](https://github.com/advanced-rest-client/arc-icons/commit/29abd97676eb3d99b4e6966441db6d1ab4b22023))
+
+
+
 <a name="1.0.14"></a>
 ## [1.0.14](https://github.com/advanced-rest-client/arc-icons/compare/1.0.12...v1.0.14) (2017-01-28)
 
