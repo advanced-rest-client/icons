@@ -1,3 +1,15 @@
+<a name="1.0.19"></a>
+## [1.0.19](https://github.com/advanced-rest-client/arc-icons/compare/1.0.18...v1.0.19) (2017-06-18)
+
+
+### Update
+
+* reverted lint command ([5c01d771665200a69115e3cb60d8f3b1a53eb2a0](https://github.com/advanced-rest-client/arc-icons/commit/5c01d771665200a69115e3cb60d8f3b1a53eb2a0))
+* Updated lint command ([3c975c13afd21f1c5dcb20e010841c90f88cf602](https://github.com/advanced-rest-client/arc-icons/commit/3c975c13afd21f1c5dcb20e010841c90f88cf602))
+* Updated travis configuration ([859b2d1a21dd7fb243bd224e8d222afe1f86e749](https://github.com/advanced-rest-client/arc-icons/commit/859b2d1a21dd7fb243bd224e8d222afe1f86e749))
+
+
+
 <a name="1.0.18"></a>
 ## [1.0.18](https://github.com/advanced-rest-client/arc-icons/compare/1.0.17...v1.0.18) (2017-04-04)
 
