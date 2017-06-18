@@ -6,7 +6,7 @@ before_script:
 - npm install --silent -g bower polymer-cli
 - bower install --silent
 script:
-- polymer lint arc-icons.html
+- npm run lint
 cache:
   directories:
   - bower_components
