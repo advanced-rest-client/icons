@@ -1,6 +1,6 @@
 {
   "name": "arc-icons",
-  "version": "1.0.20",
+  "version": "1.0.21",
   "license": "LICENSE.md",
   "description": "An icons set for Advanced REST client.",
   "devDependencies": {
