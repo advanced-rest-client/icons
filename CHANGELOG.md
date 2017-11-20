@@ -1,3 +1,17 @@
+<a name="1.0.24"></a>
+## [1.0.24](https://github.com/advanced-rest-client/arc-icons/compare/1.0.23...1.0.24) (2017-11-20)
+
+
+### New
+
+* Added list view icon. ([1c2448e12803baaeeac5989fc774b411743eb4e4](https://github.com/advanced-rest-client/arc-icons/commit/1c2448e12803baaeeac5989fc774b411743eb4e4))
+
+### Update
+
+* Removed anypoint icon definition. ([5a7003c198aac6f9fbf60c61b3d867a23cf1e2a7](https://github.com/advanced-rest-client/arc-icons/commit/5a7003c198aac6f9fbf60c61b3d867a23cf1e2a7))
+
+
+
 <a name="1.0.23"></a>
 ## [1.0.23](https://github.com/advanced-rest-client/arc-icons/compare/1.0.21...1.0.23) (2017-09-21)
 
