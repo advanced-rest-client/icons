@@ -1,3 +1,13 @@
+<a name="1.0.26"></a>
+## [1.0.26](https://github.com/advanced-rest-client/arc-icons/compare/1.0.25...1.0.26) (2017-11-21)
+
+
+### New
+
+* Added RAML logo. ([ff3f00e7703cd9e8845ebe6a49f705d73442a6cf](https://github.com/advanced-rest-client/arc-icons/commit/ff3f00e7703cd9e8845ebe6a49f705d73442a6cf))
+
+
+
 <a name="1.0.25"></a>
 ## [1.0.25](https://github.com/advanced-rest-client/arc-icons/compare/1.0.24...1.0.25) (2017-11-20)
 
