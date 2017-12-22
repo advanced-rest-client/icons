@@ -1,3 +1,13 @@
+<a name="1.0.28"></a>
+## [1.0.28](https://github.com/advanced-rest-client/arc-icons/compare/1.0.27...1.0.28) (2017-12-22)
+
+
+### New
+
+* Adding comment icon ([c6b474e2a5f2793f07f9883bcede60d9f61f5a07](https://github.com/advanced-rest-client/arc-icons/commit/c6b474e2a5f2793f07f9883bcede60d9f61f5a07))
+
+
+
 <a name="1.0.27"></a>
 ## [1.0.27](https://github.com/advanced-rest-client/arc-icons/compare/1.0.26...1.0.27) (2017-11-21)
 
