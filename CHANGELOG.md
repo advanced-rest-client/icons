@@ -1,3 +1,13 @@
+<a name="1.0.30"></a>
+## [1.0.30](https://github.com/advanced-rest-client/arc-icons/compare/1.0.29...1.0.30) (2018-01-10)
+
+
+### New
+
+* Adding star icons. ([7d92bab3813302186039ab154f345eb124009743](https://github.com/advanced-rest-client/arc-icons/commit/7d92bab3813302186039ab154f345eb124009743))
+
+
+
 <a name="1.0.29"></a>
 ## [1.0.29](https://github.com/advanced-rest-client/arc-icons/compare/1.0.28...1.0.29) (2017-12-22)
 
