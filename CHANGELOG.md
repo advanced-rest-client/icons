@@ -1,3 +1,18 @@
+<a name="2.0.1"></a>
+## [2.0.1](https://github.com/advanced-rest-client/arc-icons/compare/1.0.31...2.0.1) (2018-03-08)
+
+
+### New
+
+* Adding tests ([eff4769aa2b4f51e45135b5a9395027c55e07e2e](https://github.com/advanced-rest-client/arc-icons/commit/eff4769aa2b4f51e45135b5a9395027c55e07e2e))
+* Releaseing version 2 that supports Polymer 2.0 ([a5cb54adb2a6196ba222a8bd3aa705cf09908ee9](https://github.com/advanced-rest-client/arc-icons/commit/a5cb54adb2a6196ba222a8bd3aa705cf09908ee9))
+
+### Update
+
+* Updated Travis configuration to connect to Sauce Labs. ([ac542a26afd1b2a634f5d8bacb65a6df59402282](https://github.com/advanced-rest-client/arc-icons/commit/ac542a26afd1b2a634f5d8bacb65a6df59402282))
+
+
+
 <a name="1.0.31"></a>
 ## [1.0.31](https://github.com/advanced-rest-client/arc-icons/compare/1.0.30...1.0.31) (2018-01-10)
 
