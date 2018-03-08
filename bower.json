@@ -38,7 +38,7 @@
     ".jscsrc",
     ".jshintrc"
   ],
-  "version": "2.0.1",
+  "version": "2.0.2",
   "resolutions": {
     "webcomponentsjs": "^1.0.0"
   },
