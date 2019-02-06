@@ -4,7 +4,7 @@
   "license": "Apache-2.0",
   "description": "An icons set for Advanced REST client and API components",
   "devDependencies": {
-    "@polymer/gen-typescript-declarations": "^1.2.0"
+    "@polymer/gen-typescript-declarations": "^1.6.1"
   },
   "private": false,
   "main": "arc-icons.html",
