@@ -241,3 +241,20 @@
 
 
 
+## [2.0.5](https://github.com/advanced-rest-client/arc-icons/compare/2.0.1...2.0.5) (2019-02-09)
+
+
+### Fix
+
+* Fixing test command ([c45105d3b3f612d4fc48a8016b251b6ff7dfd25c](https://github.com/advanced-rest-client/arc-icons/commit/c45105d3b3f612d4fc48a8016b251b6ff7dfd25c))
+
+### New
+
+* Adding save-alt icon ([2a00eef1509591a84752a2cdd1481efb8a6f56f2](https://github.com/advanced-rest-client/arc-icons/commit/2a00eef1509591a84752a2cdd1481efb8a6f56f2))
+
+### Update
+
+* Updating project sources to current ARC standards ([5b63dd04a6fddf72c99515512c89d114320fbbcf](https://github.com/advanced-rest-client/arc-icons/commit/5b63dd04a6fddf72c99515512c89d114320fbbcf))
+
+
+
