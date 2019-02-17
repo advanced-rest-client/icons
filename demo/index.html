@@ -3,13 +3,13 @@
 
 <head>
   <title>arc-icons demo</title>
-  <script src="../../webcomponentsjs/webcomponents-loader.js"></script>
-  <link rel="import" href="../../paper-styles/demo-pages.html">
-  <link rel="import" href="../../paper-styles/color.html">
-  <link rel="import" href="../../iron-meta/iron-meta.html">
-  <link rel="import" href="../../iron-flex-layout/iron-flex-layout.html">
+  <script src="../../../@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
+  <script type="module" src="../../../@polymer/paper-styles/demo-pages.js"></script>
+  <script type="module" src="../../../@polymer/paper-styles/color.js"></script>
+  <script type="module" src="../../../@polymer/iron-meta/iron-meta.js"></script>
+  <script type="module" src="../../../@polymer/iron-flex-layout/iron-flex-layout.js"></script>
   <!-- load default iconset -->
-  <link rel="import" href="../arc-icons.html">
+  <script type="module" src="../arc-icons.js"></script>
 
   <custom-style>
     <style is="custom-style">
@@ -94,15 +94,18 @@
       </dom-repeat>
     </template>
   </dom-bind>
-  <script>
-  window.addEventListener('WebComponentsReady', function() {
-    scope.getIconNames = function(iconset) {
-      return iconset.getIconNames();
-    };
-    scope.parentNode.getIconNames = scope.getIconNames;
-    iconsetRepeat.items = new Polymer.IronMeta({type: 'iconset'}).list;
-  });
-  </script>
+  <script type="module">
+import '../../../@polymer/paper-styles/demo-pages.js';
+import '../../../@polymer/paper-styles/color.js';
+import { IronMeta } from '../../../@polymer/iron-meta/iron-meta.js';
+import '../../../@polymer/iron-flex-layout/iron-flex-layout.js';
+import '../arc-icons.js';
+scope.getIconNames = function(iconset) {
+  return iconset.getIconNames();
+};
+scope.parentNode.getIconNames = scope.getIconNames;
+iconsetRepeat.items = new IronMeta({type: 'iconset'}).list;
+</script>
 </body>
 
 </html>

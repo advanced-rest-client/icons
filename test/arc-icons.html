@@ -1,66 +1,62 @@
 <!doctype html>
-<!--
-@license
-Copyright (c) 2016 The Polymer Project Authors. All rights reserved.
-This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
-The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
-The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
-Code distributed by Google as part of the polymer project is also
-subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
--->
 <html>
 
 <head>
   <title>iron-icons</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
-  <script src="../../web-component-tester/browser.js"></script>
-  <link rel="import" href="../arc-icons.html">
+
+  <script src="../node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
+  <script src="../node_modules/@polymer/test-fixture/test-fixture.js"></script>
+  <script src="../node_modules/mocha/mocha.js"></script>
+  <script src="../node_modules/chai/chai.js"></script>
+  <script src="../node_modules/wct-mocha/wct-mocha.js"></script>
+
+  <script type="module" src="../arc-icons.js"></script>
 </head>
 
 <body>
-  <script>
-  suite('<iron-icons>', function() {
-    suite('basic behavior', function() {
-      var meta;
-      var iconsetNames = [
-        'arc'
-      ];
+  <script type="module">
+suite('<iron-icons>', function() {
+  suite('basic behavior', function() {
+    let meta;
+    const iconsetNames = [
+      'arc'
+    ];
 
-      setup(function() {
-        meta = document.createElement('iron-meta');
-        meta.type = 'iconset';
-      });
+    setup(function() {
+      meta = document.createElement('iron-meta');
+      meta.type = 'iconset';
+    });
 
-      test('all uniquely named', function() {
-        var allIcons = {};
-        for (var i = 0; i < iconsetNames.length; i++) {
-          var iconset = meta.byKey(iconsetNames[i]);
-          expect(iconset).to.be.ok;
+    test('all uniquely named', function() {
+      const allIcons = {};
+      for (let i = 0; i < iconsetNames.length; i++) {
+        const iconset = meta.byKey(iconsetNames[i]);
+        expect(iconset).to.be.ok;
 
-          var iconNames = iconset.getIconNames();
-          expect(iconNames).to.not.be.empty;
+        const iconNames = iconset.getIconNames();
+        expect(iconNames).to.not.be.empty;
 
-          for (var j = 0; j < iconNames.length; j++) {
-            var iconName = iconNames[j];
-            var parts = iconName.split(':');
+        for (let j = 0; j < iconNames.length; j++) {
+          const iconName = iconNames[j];
+          const parts = iconName.split(':');
 
-            expect(parts).to.have.length(2);
-            expect(parts[0]).to.equal(iconsetNames[i]);
-            expect(parts[1]).to.have.length.at.least(1);
+          expect(parts).to.have.length(2);
+          expect(parts[0]).to.equal(iconsetNames[i]);
+          expect(parts[1]).to.have.length.at.least(1);
 
-            expect(allIcons.hasOwnProperty(iconName)).to.be.false;
-            allIcons[iconName] = true;
-          }
+          expect(allIcons.hasOwnProperty(iconName)).to.be.false;
+          allIcons[iconName] = true;
         }
+      }
 
-        // Sanity check.
-        expect(Object.getOwnPropertyNames(allIcons))
-          .to.have.length.of.at.least(iconsetNames.length);
-      });
+      // Sanity check.
+      expect(Object.getOwnPropertyNames(allIcons))
+        .to.have.length.of.at.least(iconsetNames.length);
     });
   });
-  </script>
+});
+</script>
 </body>
 </html>
