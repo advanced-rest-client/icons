@@ -292,3 +292,32 @@
 
 
 
+# [3.0.0](https://github.com/advanced-rest-client/arc-icons/compare/2.0.1...3.0.0) (2019-05-31)
+
+
+### Breaking
+
+* Bumping version to stable ([dbc4777c090618654ac9af9ff2c3bf55250532fb](https://github.com/advanced-rest-client/arc-icons/commit/dbc4777c090618654ac9af9ff2c3bf55250532fb))
+
+### Docs
+
+* Updating readme file ([570c8e1ff76233d0e994230309c2fa41f28d7531](https://github.com/advanced-rest-client/arc-icons/commit/570c8e1ff76233d0e994230309c2fa41f28d7531))
+
+### Fix
+
+* Fixing test command ([c45105d3b3f612d4fc48a8016b251b6ff7dfd25c](https://github.com/advanced-rest-client/arc-icons/commit/c45105d3b3f612d4fc48a8016b251b6ff7dfd25c))
+
+### New
+
+* Adding save-alt icon ([2a00eef1509591a84752a2cdd1481efb8a6f56f2](https://github.com/advanced-rest-client/arc-icons/commit/2a00eef1509591a84752a2cdd1481efb8a6f56f2))
+
+### Update
+
+* Removing FF from tests due to unknwon WCT error ([e81302ee2e6ce696ad90f9a3cdac3b7f93733b22](https://github.com/advanced-rest-client/arc-icons/commit/e81302ee2e6ce696ad90f9a3cdac3b7f93733b22))
+* Updating import paths to match web spec ([6dbd1679ab15ba95f0ed6bee1186f515fa795170](https://github.com/advanced-rest-client/arc-icons/commit/6dbd1679ab15ba95f0ed6bee1186f515fa795170))
+* Updating node version in travis ([25bcaf1e02eea7bff1d5212374ea7f2548b31148](https://github.com/advanced-rest-client/arc-icons/commit/25bcaf1e02eea7bff1d5212374ea7f2548b31148))
+* Updating project sources to current ARC standards ([5b63dd04a6fddf72c99515512c89d114320fbbcf](https://github.com/advanced-rest-client/arc-icons/commit/5b63dd04a6fddf72c99515512c89d114320fbbcf))
+* Updating tests ([6c3d260f90ccbb9f5d7ff13cee77c855ece5eea5](https://github.com/advanced-rest-client/arc-icons/commit/6c3d260f90ccbb9f5d7ff13cee77c855ece5eea5))
+
+
+
