@@ -325,3 +325,12 @@
 
 
 
+## [3.0.2](https://github.com/advanced-rest-client/arc-icons/compare/2.0.1...3.0.2) (2019-09-11)
+
+
+### Features
+
+* adding icons as module ([078b22e](https://github.com/advanced-rest-client/arc-icons/commit/078b22e))
+
+
+
