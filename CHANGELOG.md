@@ -321,3 +321,7 @@
 
 
 
+## [3.0.1](https://github.com/advanced-rest-client/arc-icons/compare/2.0.1...3.0.1) (2019-09-11)
+
+
+
