@@ -10,14 +10,14 @@
     text-transform: capitalize;
   }
 
-  .icon {
+  iron-icon {
     transition: all 0.2s;
     -webkit-transition: all 0.2s;
     width: 24px;
     height: 24px;
   }
 
-  .icon:hover {
+  iron-icon:hover {
     fill: #f09300;
   }
 
@@ -73,17 +73,28 @@
   <script type="module">
     import { html, render } from 'lit-html';
     import '@advanced-rest-client/arc-demo-helper/arc-demo-helper.js';
-    import * as icons from '../ArcIcons.js';
-    const keys = Object.keys(icons);
+    import '@polymer/iron-icon/iron-icon.js';
+    import { IronMeta } from '@polymer/iron-meta/iron-meta.js';
+    import '../arc-icons.js';
+
+    function getIconNames(iconset) {
+      return iconset.getIconNames();
+    };
+
+    const items = new IronMeta({ type: 'iconset' }).list;
     render(
       html`
-      <h1>ARC icons</h1>
+      <h1>Icons</h1>
+      ${items.map((item) => html`
+      <h2>${item.name}</h2>
       <div class="set">
-      ${keys.map((name) => html`<span class="container">
-        <span class="icon">${icons[name]}</span>
-        <div>${name}</div>
-      </span>`)}
-      </div>
+        ${getIconNames(item).map((item) => html`
+          <span class="container">
+            <iron-icon icon="${item}"></iron-icon>
+            <div>${item}</div>
+          </span>
+        `)}
+      </div>`)}
       `,
       document.querySelector('#demo')
     );

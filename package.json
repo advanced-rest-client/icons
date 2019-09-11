@@ -4,6 +4,7 @@
   "version": "3.0.1",
   "license": "Apache-2.0",
   "main": "arc-icons.js",
+  "module": "ArcIcons.js",
   "keywords": [
     "advanced-rest-client",
     "icons"
@@ -24,7 +25,8 @@
   },
   "dependencies": {
     "@polymer/iron-icon": "^3.0.0",
-    "@polymer/iron-iconset-svg": "^3.0.0"
+    "@polymer/iron-iconset-svg": "^3.0.0",
+    "lit-element": "^2.2.1"
   },
   "devDependencies": {
     "@advanced-rest-client/arc-demo-helper": "^1.0.14",
