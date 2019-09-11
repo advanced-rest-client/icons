@@ -1,7 +1,13 @@
 {
-  "exclude": [
-    "test/**",
-    "demo/**",
-    "index.html"
+  "excludeFiles": [
+    "demo/*",
+    "test/*",
+    "coverage/*",
+    "karma.*",
+    "prettier.config.js",
+    "husky.config.js",
+    "commitlint.config.js",
+    "prettier.config.js",
+    ".*"
   ]
 }

@@ -11,8 +11,9 @@ WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
 License for the specific language governing permissions and limitations under
 the License.
 */
-import '../../@polymer/iron-icon/iron-icon.js';
-import '../../@polymer/iron-iconset-svg/iron-iconset-svg.js';
+import '@polymer/iron-icon/iron-icon.js';
+import '@polymer/iron-iconset-svg/iron-iconset-svg.js';
+/* eslint-disable max-len */
 const $documentContainer = document.createElement('template');
 $documentContainer.innerHTML = `<iron-iconset-svg size="24" name="arc">
 <svg>
