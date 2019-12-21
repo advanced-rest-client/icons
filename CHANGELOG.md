@@ -435,3 +435,97 @@
  [2b08a97](https://github.com/advanced-rest-client/arc-icons/commit/2b08a9725343c08ffa02e9525b413370f9dc83d7) by jarrodek
 
 
+<a name="3.0.5"></a>
+## [3.0.5](https://github.com/advanced-rest-client/arc-icons/compare/3.0.3...3.0.5) (2019-12-21)
+
+### Build
+
+* bumping version [5a62876](https://github.com/advanced-rest-client/arc-icons/commit/5a628763314dffe60dd912b52a334dc70faae867) by Pawel
+* bumping version [7eebfce](https://github.com/advanced-rest-client/arc-icons/commit/7eebfceba3bc2abaab13a420c0ec36c8033dd79d) by Pawel
+
+
+### Update
+
+* updating dependencies [e041bc3](https://github.com/advanced-rest-client/arc-icons/commit/e041bc3246d4ef21589498d98f410c2d88d9fcf0) by Pawel
+* adding types [948b490](https://github.com/advanced-rest-client/arc-icons/commit/948b49037cd75bef074d575c21933c047fabda2e) by Pawel
+* upgrading dev dependencies [a029c0e](https://github.com/advanced-rest-client/arc-icons/commit/a029c0e36e3b293812f05295105ab465de299535) by Pawel
+* adding "message" icon [9544d11](https://github.com/advanced-rest-client/arc-icons/commit/9544d11fd86d3975cdfeb6ddf6745f8339befeb4) by Paweł Psztyć
+* upgrading project to latest ARC standard [4315544](https://github.com/advanced-rest-client/arc-icons/commit/43155440183ad2bd1185566d2661b4e8b1b61981) by Pawel
+
+
+### Features
+
+* manually setting up types [7fa1ce4](https://github.com/advanced-rest-client/arc-icons/commit/7fa1ce4362004aa72f1622642715b0e2ce258418) by Pawel
+* adding icons as module [078b22e](https://github.com/advanced-rest-client/arc-icons/commit/078b22e992115419e1f16fe7ef4c21025bcb4a0a) by Pawel
+
+
+### Other
+
+* Docs: Updating readme file
+ [570c8e1](https://github.com/advanced-rest-client/arc-icons/commit/570c8e1ff76233d0e994230309c2fa41f28d7531) by Pawel Psztyc
+* Breaking: Bumping version to stable
+ [dbc4777](https://github.com/advanced-rest-client/arc-icons/commit/dbc4777c090618654ac9af9ff2c3bf55250532fb) by Pawel Psztyc
+* Update: Updating node version in travis
+ [25bcaf1](https://github.com/advanced-rest-client/arc-icons/commit/25bcaf1e02eea7bff1d5212374ea7f2548b31148) by Pawel Psztyc
+* Update: Removing FF from tests due to unknwon WCT error
+ [e81302e](https://github.com/advanced-rest-client/arc-icons/commit/e81302ee2e6ce696ad90f9a3cdac3b7f93733b22) by Pawel Psztyc
+* Update: Updating import paths to match web spec
+ [6dbd167](https://github.com/advanced-rest-client/arc-icons/commit/6dbd1679ab15ba95f0ed6bee1186f515fa795170) by Pawel Psztyc
+* Update: Updating tests
+ [6c3d260](https://github.com/advanced-rest-client/arc-icons/commit/6c3d260f90ccbb9f5d7ff13cee77c855ece5eea5) by Pawel Psztyc
+* New: Adding save-alt icon
+ [2a00eef](https://github.com/advanced-rest-client/arc-icons/commit/2a00eef1509591a84752a2cdd1481efb8a6f56f2) by Pawel
+* Fix: Fixing test command
+ [c45105d](https://github.com/advanced-rest-client/arc-icons/commit/c45105d3b3f612d4fc48a8016b251b6ff7dfd25c) by Pawel
+* Update: Updating project sources to current ARC standards
+ [5b63dd0](https://github.com/advanced-rest-client/arc-icons/commit/5b63dd04a6fddf72c99515512c89d114320fbbcf) by Pawel
+* Update: Updated Travis configuration to connect to Sauce Labs.
+ [ac542a2](https://github.com/advanced-rest-client/arc-icons/commit/ac542a26afd1b2a634f5d8bacb65a6df59402282) by Pawel Psztyc
+* New: Adding tests
+ [eff4769](https://github.com/advanced-rest-client/arc-icons/commit/eff4769aa2b4f51e45135b5a9395027c55e07e2e) by Pawel Psztyc
+* New: Releaseing version 2 that supports Polymer 2.0
+ [a5cb54a](https://github.com/advanced-rest-client/arc-icons/commit/a5cb54adb2a6196ba222a8bd3aa705cf09908ee9) by Pawel Psztyc
+* New: Adding star icons.
+ [7d92bab](https://github.com/advanced-rest-client/arc-icons/commit/7d92bab3813302186039ab154f345eb124009743) by Pawel Psztyc
+* New: Adding comment icon
+ [c6b474e](https://github.com/advanced-rest-client/arc-icons/commit/c6b474e2a5f2793f07f9883bcede60d9f61f5a07) by Pawel Psztyc
+* New: Added RAML logo.
+ [ff3f00e](https://github.com/advanced-rest-client/arc-icons/commit/ff3f00e7703cd9e8845ebe6a49f705d73442a6cf) by Pawel Psztyc
+* New: Added list view icon.
+ [1c2448e](https://github.com/advanced-rest-client/arc-icons/commit/1c2448e12803baaeeac5989fc774b411743eb4e4) by Pawel Psztyc
+* Update: Removed anypoint icon definition.
+ [5a7003c](https://github.com/advanced-rest-client/arc-icons/commit/5a7003c198aac6f9fbf60c61b3d867a23cf1e2a7) by Pawel Psztyc
+* Update: reverted lint command
+ [5c01d77](https://github.com/advanced-rest-client/arc-icons/commit/5c01d771665200a69115e3cb60d8f3b1a53eb2a0) by Pawel Psztyc
+* Update: Updated travis configuration
+ [859b2d1](https://github.com/advanced-rest-client/arc-icons/commit/859b2d1a21dd7fb243bd224e8d222afe1f86e749) by Pawel Psztyc
+* Update: Updated lint command
+ [3c975c1](https://github.com/advanced-rest-client/arc-icons/commit/3c975c13afd21f1c5dcb20e010841c90f88cf602) by Pawel Psztyc
+* Update: Removed sauce connect option from travis configuration
+ [29abd97](https://github.com/advanced-rest-client/arc-icons/commit/29abd97676eb3d99b4e6966441db6d1ab4b22023) by Pawel Psztyc
+* Update: Added home icon and anypoint pin icon
+ [c940023](https://github.com/advanced-rest-client/arc-icons/commit/c9400239b840f30fa78ed92d3675bd198f2460a2) by Pawel Psztyc
+* Update: Added missing icons from ARC
+ [c6ee20d](https://github.com/advanced-rest-client/arc-icons/commit/c6ee20de76806b5a844608d8a7480247cf9d4225) by CI Agent
+* Update: Added error icon
+ [48ab672](https://github.com/advanced-rest-client/arc-icons/commit/48ab672f0caeb7dcc0b40f9f43beca393f22eef8) by CI Agent
+* Update: Added menu icon
+ [f01e021](https://github.com/advanced-rest-client/arc-icons/commit/f01e021d1f6333b317d67a9552b5e6fa54afd3bf) by CI Agent
+* Update: Added new Travis configuration
+ [3219561](https://github.com/advanced-rest-client/arc-icons/commit/32195619993e54b064f6be8680aac772c7fe9b2a) by jarrodek
+* Update: Added new Travis configuration
+ [99df40e](https://github.com/advanced-rest-client/arc-icons/commit/99df40e13eec1a32339fd2935774fa051d1f3e02) by jarrodek
+* New: Added new-release icon
+ [56245d2](https://github.com/advanced-rest-client/arc-icons/commit/56245d2a36fa7cc782719a2019b7907f54985a6e) by jarrodek
+* New: Added zoom-in icon
+ [2471109](https://github.com/advanced-rest-client/arc-icons/commit/2471109708e73853781d5ba7c19f62a661567347) by jarrodek
+* New: Added chart icon
+ [7c01aff](https://github.com/advanced-rest-client/arc-icons/commit/7c01affb1434503bcb1ff18aa1f136118693331f) by jarrodek
+* New: Added missing icon that ARC uses
+ [1b0377d](https://github.com/advanced-rest-client/arc-icons/commit/1b0377ddcdf724a789147c9eba2eda1918ece612) by Paweł Psztyć
+* Fix: Added missing npm module
+ [b408d01](https://github.com/advanced-rest-client/arc-icons/commit/b408d01b123085f993171704d505daee12b27d7f) by jarrodek
+* New: Added auto release in gulp
+ [2b08a97](https://github.com/advanced-rest-client/arc-icons/commit/2b08a9725343c08ffa02e9525b413370f9dc83d7) by jarrodek
+
+
