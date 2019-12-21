@@ -11,94 +11,9 @@
 
 // tslint:disable:variable-name Describing an API that's defined elsewhere.
 
-import {svg} from 'lit-element';
-import { SVGTemplateResult } from 'lit-html';
+import {svg, SVGTemplateResult} from 'lit-element';
 
-export {
-  iconWrapper,
-  accountCircle,
-  addCircleOutline,
-  add,
-  arcIcon,
-  arcIconArrows,
-  archive,
-  arrowBack,
-  arrowDropDown,
-  arrowDropUp,
-  assignment,
-  bugReport,
-  build,
-  cached,
-  chevronLeft,
-  chevronRight,
-  cancel,
-  clear,
-  clearAll,
-  close,
-  cloudDownload,
-  code,
-  collectionsBookmark,
-  insertComment,
-  contentCopy,
-  deleteIcon,
-  desktopWindows,
-  done,
-  driveColor,
-  drive,
-  edit,
-  error,
-  expandLess,
-  expandMore,
-  exportVariant,
-  fileDownload,
-  filterList,
-  folderShared,
-  help,
-  helpOutline,
-  history,
-  home,
-  importExport,
-  info,
-  infoOutline,
-  insertChart,
-  insertDriveFile,
-  keyboardArrowDown,
-  keyboardArrowUp,
-  keyboardArrowRight,
-  list,
-  markdown,
-  menu,
-  message,
-  modeEdit,
-  moreVert,
-  newReleases,
-  notificationsActive,
-  openInNew,
-  ramlR,
-  rateReview,
-  refresh,
-  removeCircleOutline,
-  pinDrawer,
-  spellcheck,
-  sentimentVeryDissatisfied,
-  sentimentNeutral,
-  save,
-  saveAlt,
-  search,
-  send,
-  settings,
-  shield ,
-  shortText,
-  star,
-  starBorder,
-  viewColumn,
-  viewList,
-  visibility,
-  visibilityOff,
-  warning,
-  wrapText,
-  zoomIn
-};
+export {iconWrapper};
 
 
 /**
@@ -106,87 +21,86 @@ export {
  *
  * @returns Complete SVG icon definition
  */
-declare function iconWrapper(tpl: SVGTemplateResult|null): SVGTemplateResult|null;
-
-declare const accountCircle: SVGTemplateResult;
-declare const addCircleOutline: SVGTemplateResult;
-declare const add: SVGTemplateResult;
-declare const arcIcon: SVGTemplateResult;
-declare const arcIconArrows: SVGTemplateResult;
-declare const archive: SVGTemplateResult;
-declare const arrowBack: SVGTemplateResult;
-declare const arrowDropDown: SVGTemplateResult;
-declare const arrowDropUp: SVGTemplateResult;
-declare const assignment: SVGTemplateResult;
-declare const bugReport: SVGTemplateResult;
-declare const build: SVGTemplateResult;
-declare const cached: SVGTemplateResult;
-declare const chevronLeft: SVGTemplateResult;
-declare const chevronRight: SVGTemplateResult;
-declare const cancel: SVGTemplateResult;
-declare const clear: SVGTemplateResult;
-declare const clearAll: SVGTemplateResult;
-declare const close: SVGTemplateResult;
-declare const cloudDownload: SVGTemplateResult;
-declare const code: SVGTemplateResult;
-declare const collectionsBookmark: SVGTemplateResult;
-declare const insertComment: SVGTemplateResult;
-declare const contentCopy: SVGTemplateResult;
-declare const deleteIcon: SVGTemplateResult;
-declare const desktopWindows: SVGTemplateResult;
-declare const done: SVGTemplateResult;
-declare const driveColor: SVGTemplateResult;
-declare const drive: SVGTemplateResult;
-declare const edit: SVGTemplateResult;
-declare const error: SVGTemplateResult;
-declare const expandLess: SVGTemplateResult;
-declare const expandMore: SVGTemplateResult;
-declare const exportVariant: SVGTemplateResult;
-declare const fileDownload: SVGTemplateResult;
-declare const filterList: SVGTemplateResult;
-declare const folderShared: SVGTemplateResult;
-declare const help: SVGTemplateResult;
-declare const helpOutline: SVGTemplateResult;
-declare const history: SVGTemplateResult;
-declare const home: SVGTemplateResult;
-declare const importExport: SVGTemplateResult;
-declare const info: SVGTemplateResult;
-declare const infoOutline: SVGTemplateResult;
-declare const insertChart: SVGTemplateResult;
-declare const insertDriveFile: SVGTemplateResult;
-declare const keyboardArrowDown: SVGTemplateResult;
-declare const keyboardArrowUp: SVGTemplateResult;
-declare const keyboardArrowRight: SVGTemplateResult;
-declare const list: SVGTemplateResult;
-declare const markdown: SVGTemplateResult;
-declare const menu: SVGTemplateResult;
-declare const message: SVGTemplateResult;
-declare const modeEdit: SVGTemplateResult;
-declare const moreVert: SVGTemplateResult;
-declare const newReleases: SVGTemplateResult;
-declare const notificationsActive: SVGTemplateResult;
-declare const openInNew: SVGTemplateResult;
-declare const ramlR: SVGTemplateResult;
-declare const rateReview: SVGTemplateResult;
-declare const refresh: SVGTemplateResult;
-declare const removeCircleOutline: SVGTemplateResult;
-declare const pinDrawer: SVGTemplateResult;
-declare const spellcheck: SVGTemplateResult;
-declare const sentimentVeryDissatisfied: SVGTemplateResult;
-declare const sentimentNeutral: SVGTemplateResult;
-declare const save: SVGTemplateResult;
-declare const saveAlt: SVGTemplateResult;
-declare const search: SVGTemplateResult;
-declare const send: SVGTemplateResult;
-declare const settings: SVGTemplateResult;
-declare const shield : SVGTemplateResult;
-declare const shortText: SVGTemplateResult;
-declare const star: SVGTemplateResult;
-declare const starBorder: SVGTemplateResult;
-declare const viewColumn: SVGTemplateResult;
-declare const viewList: SVGTemplateResult;
-declare const visibility: SVGTemplateResult;
-declare const visibilityOff: SVGTemplateResult;
-declare const warning: SVGTemplateResult;
-declare const wrapText: SVGTemplateResult;
-declare const zoomIn: SVGTemplateResult;
+declare function iconWrapper(tpl: SVGTemplateResult): SVGTemplateResult;
+export const accountCircle: SVGTemplateResult;
+export const addCircleOutline: SVGTemplateResult;
+export const add: SVGTemplateResult;
+export const arcIcon: SVGTemplateResult;
+export const arcIconArrows: SVGTemplateResult;
+export const archive: SVGTemplateResult;
+export const arrowBack: SVGTemplateResult;
+export const arrowDropDown: SVGTemplateResult;
+export const arrowDropUp: SVGTemplateResult;
+export const assignment: SVGTemplateResult;
+export const bugReport: SVGTemplateResult;
+export const build: SVGTemplateResult;
+export const cached: SVGTemplateResult;
+export const chevronLeft: SVGTemplateResult;
+export const chevronRight: SVGTemplateResult;
+export const cancel: SVGTemplateResult;
+export const clear: SVGTemplateResult;
+export const clearAll: SVGTemplateResult;
+export const close: SVGTemplateResult;
+export const cloudDownload: SVGTemplateResult;
+export const code: SVGTemplateResult;
+export const collectionsBookmark: SVGTemplateResult;
+export const insertComment: SVGTemplateResult;
+export const contentCopy: SVGTemplateResult;
+export const deleteIcon: SVGTemplateResult;
+export const desktopWindows: SVGTemplateResult;
+export const done: SVGTemplateResult;
+export const driveColor: SVGTemplateResult;
+export const drive: SVGTemplateResult;
+export const edit: SVGTemplateResult;
+export const error: SVGTemplateResult;
+export const expandLess: SVGTemplateResult;
+export const expandMore: SVGTemplateResult;
+export const exportVariant: SVGTemplateResult;
+export const fileDownload: SVGTemplateResult;
+export const filterList: SVGTemplateResult;
+export const folderShared: SVGTemplateResult;
+export const help: SVGTemplateResult;
+export const helpOutline: SVGTemplateResult;
+export const history: SVGTemplateResult;
+export const home: SVGTemplateResult;
+export const importExport: SVGTemplateResult;
+export const info: SVGTemplateResult;
+export const infoOutline: SVGTemplateResult;
+export const insertChart: SVGTemplateResult;
+export const insertDriveFile: SVGTemplateResult;
+export const keyboardArrowDown: SVGTemplateResult;
+export const keyboardArrowUp: SVGTemplateResult;
+export const keyboardArrowRight: SVGTemplateResult;
+export const list: SVGTemplateResult;
+export const markdown: SVGTemplateResult;
+export const menu: SVGTemplateResult;
+export const message: SVGTemplateResult;
+export const modeEdit: SVGTemplateResult;
+export const moreVert: SVGTemplateResult;
+export const newReleases: SVGTemplateResult;
+export const notificationsActive: SVGTemplateResult;
+export const openInNew: SVGTemplateResult;
+export const ramlR: SVGTemplateResult;
+export const rateReview: SVGTemplateResult;
+export const refresh: SVGTemplateResult;
+export const removeCircleOutline: SVGTemplateResult;
+export const pinDrawer: SVGTemplateResult;
+export const spellcheck: SVGTemplateResult;
+export const sentimentVeryDissatisfied: SVGTemplateResult;
+export const sentimentNeutral: SVGTemplateResult;
+export const save: SVGTemplateResult;
+export const saveAlt: SVGTemplateResult;
+export const search: SVGTemplateResult;
+export const send: SVGTemplateResult;
+export const settings: SVGTemplateResult;
+export const shield : SVGTemplateResult;
+export const shortText: SVGTemplateResult;
+export const star: SVGTemplateResult;
+export const starBorder: SVGTemplateResult;
+export const viewColumn: SVGTemplateResult;
+export const viewList: SVGTemplateResult;
+export const visibility: SVGTemplateResult;
+export const visibilityOff: SVGTemplateResult;
+export const warning: SVGTemplateResult;
+export const wrapText: SVGTemplateResult;
+export const zoomIn: SVGTemplateResult;
