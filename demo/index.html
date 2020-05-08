@@ -73,16 +73,43 @@
   <script type="module">
     import { html, render } from 'lit-html';
     import '@advanced-rest-client/arc-demo-helper/arc-demo-helper.js';
+    import '../arc-icon.js';
     import * as icons from '../ArcIcons.js';
+
+    const ignored = ['iconWrapper'];
+
     const keys = Object.keys(icons);
     render(
       html`
-      <h1>ARC icons</h1>
+      <h1>Advanced REST Client and API Console icons</h1>
+      <h2>With "icon" attribute</h2>
       <div class="set">
-      ${keys.map((name) => html`<span class="container">
-        <span class="icon">${icons[name]}</span>
-        <div>${name}</div>
-      </span>`)}
+      ${keys.map((name) => {
+        if (ignored.indexOf(name) !== -1) {
+          return '';
+        }
+        return html`
+        <span class="container">
+          <arc-icon icon="${name}" class="icon"></arc-icon>
+          <span>${name}</span>
+        </span>
+        `;
+      })}
+      </div>
+
+      <h2>With child node</h2>
+      <div class="set">
+      ${keys.map((name) => {
+        if (ignored.indexOf(name) !== -1) {
+          return '';
+        }
+        return html`
+        <span class="container">
+          <arc-icon class="icon">${icons[name]}</arc-icon>
+          <span>${name}</span>
+        </span>
+        `;
+      })}
       </div>
       `,
       document.querySelector('#demo')
