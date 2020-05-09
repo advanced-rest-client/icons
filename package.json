@@ -77,7 +77,6 @@
     ]
   },
   "publishConfig": {
-    "access": "private",
-    "registry": "https://npm.pkg.github.com/"
+    "access": "public"
   }
 }
