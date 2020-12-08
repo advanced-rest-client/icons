@@ -658,3 +658,25 @@
 * updated Travis configuration to connect to Sauce Labs [230b09e](https://github.com/advanced-rest-client/arc-icons/commit/230b09e165dcd178e09294dfa5e81e80aa11ee79) by Pawel
 
 
+<a name="3.2.0"></a>
+## [3.2.0](https://github.com/advanced-rest-client/arc-icons/compare/3.1.0...3.2.0) (2020-12-08)
+
+### Update
+
+* adding new icons, removing unused [c99249f](https://github.com/advanced-rest-client/arc-icons/commit/c99249f86f546711214c570fba3630d279d03586) by Pawel Psztyc
+* [ci skip] automated merge master->stage. syncing main branches [e34cc59](https://github.com/advanced-rest-client/arc-icons/commit/e34cc5979e7f589435ae8aca46cab0522e1e9e2c) by Ci agent
+* removing GH from publishing registry [8c7e956](https://github.com/advanced-rest-client/arc-icons/commit/8c7e95676038801dfe16fd346687b27e65016e6b) by Pawel
+* [ci skip] automated merge master->stage. syncing main branches [3c4bd29](https://github.com/advanced-rest-client/arc-icons/commit/3c4bd296db1cfbbb335d82fd5f0c588dd39ed17a) by Ci agent
+
+
+### Features
+
+* adding selectAll icon [08cda7c](https://github.com/advanced-rest-client/arc-icons/commit/08cda7ce1ac5a349b78e8d0bfc0b01ecc1836496) by Pawel
+
+
+### Testing
+
+* moving to the new test framework [48f8690](https://github.com/advanced-rest-client/arc-icons/commit/48f869061bc056e83046dfe134b02ab528fec0d1) by Pawel Psztyc
+* updated Travis configuration to connect to Sauce Labs [230b09e](https://github.com/advanced-rest-client/arc-icons/commit/230b09e165dcd178e09294dfa5e81e80aa11ee79) by Pawel
+
+
