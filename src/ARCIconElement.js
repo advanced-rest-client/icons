@@ -5,7 +5,7 @@ import * as Icons from './ArcIcons.js';
 
 /**
  * An element to render a 24x24 icon.
- * By default it inhertits current color. The fill color can be changed by setting
+ * By default it inherits current color. The fill color can be changed by setting
  * the CSS' color property.
  *
  * @extends LitElement
@@ -54,7 +54,7 @@ export class ARCIconElement extends LitElement {
   }
 
   /**
-   * Maps icon name to it's definitnion and sets `hasIcon` value.
+   * Maps icon name to it's definition and sets `hasIcon` value.
    *
    * @param {String} name Icon name
    */
