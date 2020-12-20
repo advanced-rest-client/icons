@@ -680,3 +680,28 @@
 * updated Travis configuration to connect to Sauce Labs [230b09e](https://github.com/advanced-rest-client/arc-icons/commit/230b09e165dcd178e09294dfa5e81e80aa11ee79) by Pawel
 
 
+<a name="3.2.2"></a>
+## [3.2.2](https://github.com/advanced-rest-client/arc-icons/compare/3.1.2...3.2.2) (2020-12-20)
+
+### Build
+
+* bumping version [0cc302c](https://github.com/advanced-rest-client/arc-icons/commit/0cc302cd353fe9f86a456e0cd6da7335bf629f53) by Pawel Psztyc
+
+
+### Update
+
+* [ci skip] automated merge master->stage. syncing main branches [35567e7](https://github.com/advanced-rest-client/arc-icons/commit/35567e771dc1bb68e893f3c0ecc0180bf5e5af96) by Ci agent
+* adding new icons, removing unused [c99249f](https://github.com/advanced-rest-client/arc-icons/commit/c99249f86f546711214c570fba3630d279d03586) by Pawel Psztyc
+* [ci skip] automated merge master->stage. syncing main branches [e34cc59](https://github.com/advanced-rest-client/arc-icons/commit/e34cc5979e7f589435ae8aca46cab0522e1e9e2c) by Ci agent
+
+
+### Features
+
+* adding drag handle icon [bdb5c80](https://github.com/advanced-rest-client/arc-icons/commit/bdb5c80ca6c65339df1c34ee52d81ec6545b634a) by Pawel Psztyc
+
+
+### Testing
+
+* moving to the new test framework [48f8690](https://github.com/advanced-rest-client/arc-icons/commit/48f869061bc056e83046dfe134b02ab528fec0d1) by Pawel Psztyc
+
+
