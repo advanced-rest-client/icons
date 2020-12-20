@@ -38,6 +38,7 @@ export const deleteIcon: SVGTemplateResult;
 export const deleteOutline: SVGTemplateResult;
 export const desktopWindows: SVGTemplateResult;
 export const done: SVGTemplateResult;
+export const dragHandle: SVGTemplateResult;
 export const driveColor: SVGTemplateResult;
 export const drive: SVGTemplateResult;
 export const edit: SVGTemplateResult;

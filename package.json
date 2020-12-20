@@ -1,7 +1,7 @@
 {
   "name": "@advanced-rest-client/arc-icons",
   "description": "An icons set for Advanced REST client and API components",
-  "version": "3.2.1",
+  "version": "3.2.2",
   "license": "Apache-2.0",
   "main": "index.js",
   "module": "index.js",
@@ -30,15 +30,15 @@
     "@polymer/iron-iconset-svg": "^3.0.1"
   },
   "devDependencies": {
-    "@advanced-rest-client/arc-demo-helper": "^2.2.0",
+    "@advanced-rest-client/arc-demo-helper": "^2.2.3",
     "@open-wc/eslint-config": "^4.0.1",
     "@open-wc/testing": "^2.5.32",
-    "@web/dev-server": "^0.0.25",
-    "@web/test-runner": "^0.10.0",
-    "@web/test-runner-playwright": "^0.6.6",
-    "eslint": "^7.15.0",
-    "eslint-config-prettier": "^7.0.0",
-    "husky": "^4.3.5",
+    "@web/dev-server": "^0.1.0",
+    "@web/test-runner": "^0.11.0",
+    "@web/test-runner-playwright": "^0.7.0",
+    "eslint": "^7.16.0",
+    "eslint-config-prettier": "^7.1.0",
+    "husky": "^4.3.6",
     "lint-staged": "^10.5.3"
   },
   "scripts": {
