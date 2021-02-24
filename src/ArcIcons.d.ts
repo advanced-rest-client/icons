@@ -90,6 +90,8 @@ export const shield : SVGTemplateResult;
 export const shortText: SVGTemplateResult;
 export const star: SVGTemplateResult;
 export const starBorder: SVGTemplateResult;
+export const toggleOff: SVGTemplateResult;
+export const toggleOn: SVGTemplateResult;
 export const viewColumn: SVGTemplateResult;
 export const viewList: SVGTemplateResult;
 export const visibility: SVGTemplateResult;
