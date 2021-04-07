@@ -11,7 +11,8 @@ import * as Icons from './ArcIcons.js';
  * @extends LitElement
  */
 export class ARCIconElement extends LitElement {
-  static get styles() {
+  // eslint-disable-next-line class-methods-use-this
+  get styles() {
     return css`
       :host {
         display: inline-block;
@@ -71,8 +72,10 @@ export class ARCIconElement extends LitElement {
   render() {
     const { hasIcon, _iconValue } = this;
     if (!hasIcon) {
-      return html`<slot></slot>`;
+      return html`<style>${this.styles}</style>
+      <slot></slot>`;
     }
-    return html`${_iconValue}`;
+    return html`<style>${this.styles}</style>
+    ${_iconValue}`;
   }
 }
