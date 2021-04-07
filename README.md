@@ -1,17 +1,16 @@
+# arc-icons
+
 [![Published on NPM](https://img.shields.io/npm/v/@advanced-rest-client/arc-icons.svg)](https://www.npmjs.com/package/@advanced-rest-client/arc-icons)
 
-[![Build Status](https://travis-ci.com/advanced-rest-client/arc-icons.svg)](https://travis-ci.com/advanced-rest-client/arc-icons)
-
-[![Published on webcomponents.org](https://img.shields.io/badge/webcomponents.org-published-blue.svg)](https://www.webcomponents.org/element/advanced-rest-client/arc-icons)
-
-# arc-icons
+[![Tests and publishing](https://github.com/advanced-rest-client/arc-icons/actions/workflows/deployment.yml/badge.svg)](https://github.com/advanced-rest-client/arc-icons/actions/workflows/deployment.yml)
 
 A set of icons for Advanced REST Client.
 
 ## Usage
 
 ### Installation
-```
+
+```sh
 npm install @advanced-rest-client/arc-icons --save
 ```
 
@@ -69,6 +68,7 @@ npm start
 ```
 
 ### Running the tests
+
 ```sh
 npm test
 ```
