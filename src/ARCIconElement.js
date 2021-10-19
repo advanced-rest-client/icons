@@ -72,10 +72,8 @@ export class ARCIconElement extends LitElement {
   render() {
     const { hasIcon, _iconValue } = this;
     if (!hasIcon) {
-      return html`<style>${this.styles}</style>
-      <slot></slot>`;
+      return html`<style>${this.styles}</style><slot></slot>`;
     }
-    return html`<style>${this.styles}</style>
-    ${_iconValue}`;
+    return html`<style>${this.styles}</style>${_iconValue}`;
   }
 }

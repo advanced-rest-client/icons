@@ -1,17 +1,14 @@
 {
-  "name": "@advanced-rest-client/arc-icons",
-  "description": "An icons set for Advanced REST client and API components",
-  "version": "3.3.4",
+  "name": "@advanced-rest-client/icons",
+  "description": "An icons set for the Advanced REST client application",
+  "version": "4.0.0",
   "license": "Apache-2.0",
   "main": "index.js",
   "module": "index.js",
-  "keywords": [
-    "advanced-rest-client",
-    "icons"
-  ],
-  "authors": [
-    "Pawel Psztyc"
-  ],
+  "author": {
+    "name": "Pawel Uchida-Psztyc",
+    "email": "pawel.psztyc@gmail.com"
+  },
   "contributors": [
     "Your name can be here!"
   ],
@@ -28,22 +25,16 @@
     "lit-html": "^1.4.1"
   },
   "devDependencies": {
-    "@advanced-rest-client/arc-demo-helper": "^3.0.2",
-    "@open-wc/eslint-config": "^4.3.0",
-    "@open-wc/testing": "^2.5.33",
-    "@polymer/iron-icon": "^3.0.1",
-    "@polymer/iron-iconset-svg": "^3.0.1",
-    "@web/dev-server": "^0.1.23",
-    "@web/test-runner": "^0.13.17",
+    "@advanced-rest-client/arc-demo-helper": "^5.0.1",
+    "@open-wc/eslint-config": "^6.0.0",
+    "@open-wc/testing": "^3.0.1",
+    "@web/dev-server": "^0.1.25",
+    "@web/test-runner": "^0.13.20",
     "@web/test-runner-playwright": "^0.8.8",
-    "eslint": "^7.32.0",
+    "eslint": "^8.0.1",
     "eslint-config-prettier": "^8.3.0",
     "husky": "^7.0.2",
-    "lint-staged": "^11.1.2"
-  },
-  "peerDependencies": {
-    "@polymer/iron-icon": "^3.0.1",
-    "@polymer/iron-iconset-svg": "^3.0.1"
+    "lint-staged": "^11.2.3"
   },
   "scripts": {
     "start": "web-dev-server --app-index demo/index.html --node-resolve --open --watch --root-dir .",

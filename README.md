@@ -1,8 +1,8 @@
-# arc-icons
+# ARC icons
 
-[![Published on NPM](https://img.shields.io/npm/v/@advanced-rest-client/arc-icons.svg)](https://www.npmjs.com/package/@advanced-rest-client/arc-icons)
+[![Published on NPM](https://img.shields.io/npm/v/@advanced-rest-client/icons.svg)](https://www.npmjs.com/package/@advanced-rest-client/icons)
 
-[![Tests and publishing](https://github.com/advanced-rest-client/arc-icons/actions/workflows/deployment.yml/badge.svg)](https://github.com/advanced-rest-client/arc-icons/actions/workflows/deployment.yml)
+[![Tests and publishing](https://github.com/advanced-rest-client/icons/actions/workflows/deployment.yml/badge.svg)](https://github.com/advanced-rest-client/icons/actions/workflows/deployment.yml)
 
 A set of icons for Advanced REST Client.
 
@@ -11,7 +11,7 @@ A set of icons for Advanced REST Client.
 ### Installation
 
 ```sh
-npm install @advanced-rest-client/arc-icons --save
+npm install @advanced-rest-client/icons --save
 ```
 
 ### In an html file
@@ -20,7 +20,7 @@ npm install @advanced-rest-client/arc-icons --save
 <html>
   <head>
     <script type="module">
-      import '@advanced-rest-client/arc-icons/arc-icon.js';
+      import '@advanced-rest-client/icons/arc-icon.js';
     </script>
   </head>
   <body>
@@ -33,8 +33,8 @@ npm install @advanced-rest-client/arc-icons --save
 
 ```js
 import { LitElement, html, svg } from 'lit-element';
-import '@advanced-rest-client/arc-icons/arc-icon.js';
-import * as Icons from '@advanced-rest-client/arc-icons';
+import '@advanced-rest-client/icons/arc-icon.js';
+import * as Icons from '@advanced-rest-client/icons';
 
 class SampleElement extends LitElement {
   render() {
@@ -56,8 +56,8 @@ customElements.define('sample-element', SampleElement);
 ## Development
 
 ```sh
-git clone https://github.com/advanced-rest-client/arc-icons
-cd arc-icons
+git clone https://github.com/advanced-rest-client/icons
+cd icons
 npm install
 ```
 
