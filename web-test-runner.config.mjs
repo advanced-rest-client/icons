@@ -1,6 +1,7 @@
 import { playwrightLauncher } from '@web/test-runner-playwright';
 
 export default {
+  files: 'test/**/*.test.js',
   nodeResolve: true,
   coverage: true,
   browsers: [
