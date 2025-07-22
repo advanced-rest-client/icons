@@ -29,13 +29,13 @@
     "@open-wc/eslint-config": "^6.0.0",
     "@open-wc/testing": "^3.0.1",
     "@web/dev-server": "^0.4.6",
-    "@web/test-runner": "^0.20.2",
-    "@web/test-runner-playwright": "^0.11.1",
+    "@web/test-runner": "^0.18.0",
+    "@web/test-runner-playwright": "^0.11.0",
     "eslint": "^8.0.1",
     "eslint-config-prettier": "^8.3.0",
     "husky": "^7.0.2",
     "lint-staged": "^11.2.3",
-    "playwright": "1.25.2"
+    "playwright": "1.40.1"
   },
   "scripts": {
     "start": "web-dev-server --app-index demo/index.html --node-resolve --open --watch --root-dir .",
@@ -44,9 +44,9 @@
     "lint:types": "tsc",
     "lint": "npm run lint:eslint",
     "format": "npm run format:eslint",
-    "test": "npx @web/test-runner@0.20.2 test/**/*.test.js --coverage --node-resolve --playwright --browsers chromium firefox webkit",
-    "test:watch": "npx @web/test-runner@0.20.2 test/**/*.test.js --node-resolve --watch --playwright --browsers chromium",
-    "gen:wc": "wca analyze \"*.js\" --outFile custom-elements.json"
+    "test": "web-test-runner",
+    "test:watch": "web-test-runner --watch",
+    "gen:wc": "wca analyze src --format json --outFile custom-elements.json"
   },
   "eslintConfig": {
     "extends": [
