@@ -32,7 +32,9 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-node-
       - name: Install dependencies
-        run: npm install
+        run: npm ci
+      - name: Install Playwright browsers and dependencies
+        run: npx playwright install --with-deps
       - name: Run tests
         run: npm test
   test_win:
@@ -51,7 +53,9 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-node-
       - name: Install dependencies
-        run: npm install
+        run: npm ci
+      - name: Install Playwright browsers and dependencies
+        run: npx playwright install --with-deps
       - name: Run tests
         run: npm test
   tag:
@@ -76,7 +80,7 @@ jobs:
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
             ${{ runner.os }}-node-
-      - run: npm install
+      - run: npm ci
       - name: Read version from package.json
         uses: culshaw/read-package-node-version-actions@v1
         id: package-node-version
