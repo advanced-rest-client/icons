@@ -99,3 +99,4 @@ export const visibilityOff: SVGTemplateResult;
 export const warning: SVGTemplateResult;
 export const wrapText: SVGTemplateResult;
 export const zoomIn: SVGTemplateResult;
+export const codegenie: SVGTemplateResult;
