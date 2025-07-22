@@ -1,34 +1,11 @@
-import { playwrightLauncher } from '@web/test-runner-playwright';
+import { chromeLauncher } from '@web/test-runner';
 
 export default {
   files: 'test/**/*.test.js',
   nodeResolve: true,
   coverage: true,
   browsers: [
-    playwrightLauncher({
-      product: 'chromium',
-      launchOptions: {
-        headless: true,
-        args: ['--no-sandbox', '--disable-setuid-sandbox'],
-        channel: 'chrome'
-      },
-    }),
-    playwrightLauncher({
-      product: 'firefox',
-      launchOptions: {
-        headless: true,
-        firefoxUserPrefs: {
-          'browser.cache.disk.enable': false,
-          'browser.cache.memory.enable': false
-        }
-      },
-    }),
-    playwrightLauncher({
-      product: 'webkit',
-      launchOptions: {
-        headless: true
-      },
-    }),
+    chromeLauncher(),
   ],
   testFramework: {
     config: {

@@ -39,14 +39,14 @@ jobs:
           echo "always-auth=false" >> ~/.npmrc
           echo "strict-ssl=true" >> ~/.npmrc
           npm config list
+      - name: Install Playwright browsers
+        run: |
+          npm install -g playwright@1.40.1
+          npx playwright install chromium firefox webkit --with-deps
       - name: Install dependencies
         run: |
           npm install -g npm@10.2.4
           npm install --no-audit --registry https://registry.npmjs.org/ --no-shrinkwrap
-      - name: Install Playwright browsers
-        run: |
-          npx playwright install chromium firefox webkit --with-deps
-          npx playwright install-deps
       - name: Run tests
         run: npm test
   test_win:
@@ -72,14 +72,14 @@ jobs:
           echo "always-auth=false" >> $env:USERPROFILE\.npmrc
           echo "strict-ssl=true" >> $env:USERPROFILE\.npmrc
           npm config list
+      - name: Install Playwright browsers
+        run: |
+          npm install -g playwright@1.40.1
+          npx playwright install chromium firefox webkit --with-deps
       - name: Install dependencies
         run: |
           npm install -g npm@10.2.4
           npm install --no-audit --registry https://registry.npmjs.org/ --no-shrinkwrap
-      - name: Install Playwright browsers
-        run: |
-          npx playwright install chromium firefox webkit --with-deps
-          npx playwright install-deps
       - name: Run tests
         run: npm test
   tag:
