@@ -30,6 +30,10 @@ jobs:
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
             ${{ runner.os }}-node-
+      - name: Configure npm registry
+        run: |
+          npm config set registry https://registry.npmjs.org/
+          npm config rm @advanced-rest-client:registry || true
       - name: Install dependencies
         run: |
           npm install -g npm@10.2.4
@@ -54,6 +58,10 @@ jobs:
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
             ${{ runner.os }}-node-
+      - name: Configure npm registry
+        run: |
+          npm config set registry https://registry.npmjs.org/
+          npm config rm @advanced-rest-client:registry || true
       - name: Install dependencies
         run: |
           npm install -g npm@10.2.4
@@ -79,13 +87,17 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: '18.x'
-          registry-url: 'https://registry.npmjs.org'
+          registry-url: 'https://registry.npmjs.org/'
       - uses: actions/cache@v3
         with:
           path: ~/.npm
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
             ${{ runner.os }}-node-
+      - name: Configure npm registry
+        run: |
+          npm config set registry https://registry.npmjs.org/
+          npm config rm @advanced-rest-client:registry || true
       - name: Install dependencies
         run: |
           npm install -g npm@10.2.4
