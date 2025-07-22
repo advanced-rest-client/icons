@@ -30,14 +30,18 @@ jobs:
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
             ${{ runner.os }}-node-
-      - name: Configure npm registry
+      - name: Clean npm config and setup registry
         run: |
-          npm config set registry https://registry.npmjs.org/
+          npm config rm registry || true
           npm config rm @advanced-rest-client:registry || true
+          npm config rm @mulesoft:registry || true
+          npm config rm @salesforce:registry || true
+          npm config set registry https://registry.npmjs.org/
+          npm config list
       - name: Install dependencies
         run: |
           npm install -g npm@10.2.4
-          npm install --no-audit
+          npm install --no-audit --registry https://registry.npmjs.org/
       - name: Install Playwright
         run: |
           npx playwright install
@@ -58,14 +62,18 @@ jobs:
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
             ${{ runner.os }}-node-
-      - name: Configure npm registry
+      - name: Clean npm config and setup registry
         run: |
-          npm config set registry https://registry.npmjs.org/
+          npm config rm registry || true
           npm config rm @advanced-rest-client:registry || true
+          npm config rm @mulesoft:registry || true
+          npm config rm @salesforce:registry || true
+          npm config set registry https://registry.npmjs.org/
+          npm config list
       - name: Install dependencies
         run: |
           npm install -g npm@10.2.4
-          npm install --no-audit
+          npm install --no-audit --registry https://registry.npmjs.org/
       - name: Install Playwright
         run: |
           npx playwright install
@@ -94,14 +102,18 @@ jobs:
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
             ${{ runner.os }}-node-
-      - name: Configure npm registry
+      - name: Clean npm config and setup registry
         run: |
-          npm config set registry https://registry.npmjs.org/
+          npm config rm registry || true
           npm config rm @advanced-rest-client:registry || true
+          npm config rm @mulesoft:registry || true
+          npm config rm @salesforce:registry || true
+          npm config set registry https://registry.npmjs.org/
+          npm config list
       - name: Install dependencies
         run: |
           npm install -g npm@10.2.4
-          npm install --no-audit
+          npm install --no-audit --registry https://registry.npmjs.org/
       - name: Read version from package.json
         uses: culshaw/read-package-node-version-actions@v1
         id: package-node-version
