@@ -34,7 +34,8 @@
     "eslint": "^8.0.1",
     "eslint-config-prettier": "^8.3.0",
     "husky": "^7.0.2",
-    "lint-staged": "^11.2.3"
+    "lint-staged": "^11.2.3",
+    "playwright": "1.25.2"
   },
   "scripts": {
     "start": "web-dev-server --app-index demo/index.html --node-resolve --open --watch --root-dir .",
@@ -79,9 +80,5 @@
     "*.js": [
       "eslint --fix"
     ]
-  },  
-  "overrides": {
-    "playwright": "1.25.2",
-    "@web/test-runner-playwright": "0.11.1"
   }
 }
