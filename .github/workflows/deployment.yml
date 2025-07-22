@@ -43,9 +43,9 @@ jobs:
         run: |
           npm install -g npm@10.2.4
           npm install --no-audit --registry https://registry.npmjs.org/ --no-shrinkwrap
-      - name: Install Playwright
+      - name: Install Playwright browsers
         run: |
-          npx playwright install
+          npx playwright install chromium firefox webkit --with-deps
           npx playwright install-deps
       - name: Run tests
         run: npm test
@@ -76,9 +76,9 @@ jobs:
         run: |
           npm install -g npm@10.2.4
           npm install --no-audit --registry https://registry.npmjs.org/ --no-shrinkwrap
-      - name: Install Playwright
+      - name: Install Playwright browsers
         run: |
-          npx playwright install
+          npx playwright install chromium firefox webkit --with-deps
           npx playwright install-deps
       - name: Run tests
         run: npm test
