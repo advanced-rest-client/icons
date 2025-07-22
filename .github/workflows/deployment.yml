@@ -24,7 +24,6 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: 18
-      - uses: microsoft/playwright-github-action@v1
       - uses: actions/cache@v3
         with:
           path: ~/.npm
@@ -32,7 +31,13 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-node-
       - name: Install dependencies
-        run: npm install
+        run: |
+          npm install -g npm@10.2.4
+          npm install --no-audit
+      - name: Install Playwright
+        run: |
+          npx playwright install
+          npx playwright install-deps
       - name: Run tests
         run: npm test
   test_win:
@@ -51,10 +56,12 @@ jobs:
             ${{ runner.os }}-node-
       - name: Install dependencies
         run: |
-          npm install -g npm@latest
-          npm ci
+          npm install -g npm@10.2.4
+          npm install --no-audit
       - name: Install Playwright
-        run: npx playwright install-deps
+        run: |
+          npx playwright install
+          npx playwright install-deps
       - name: Run tests
         run: npm test
   tag:
@@ -79,7 +86,10 @@ jobs:
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
             ${{ runner.os }}-node-
-      - run: npm install
+      - name: Install dependencies
+        run: |
+          npm install -g npm@10.2.4
+          npm install --no-audit
       - name: Read version from package.json
         uses: culshaw/read-package-node-version-actions@v1
         id: package-node-version
