@@ -1,7 +1,7 @@
 {
   "name": "@advanced-rest-client/icons",
   "description": "An icons set for the Advanced REST client application",
-  "version": "4.0.1",
+  "version": "4.0.2",
   "license": "Apache-2.0",
   "main": "index.js",
   "module": "index.js",
