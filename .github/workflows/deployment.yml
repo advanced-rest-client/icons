@@ -17,23 +17,36 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: [ubuntu-20.04]
-        # os: [ubuntu-18.04, ubuntu-20.04]
+        os: [ubuntu-22.04]
     runs-on: ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
         with:
-          node-version: 14
-      - uses: microsoft/playwright-github-action@v1
-      - uses: actions/cache@v1
+          node-version: 18
+      - uses: actions/cache@v3
         with:
           path: ~/.npm
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
             ${{ runner.os }}-node-
+      - name: Setup npm config
+        run: |
+          echo "registry=https://registry.npmjs.org/" > ~/.npmrc
+          echo "@advanced-rest-client:registry=https://registry.npmjs.org/" >> ~/.npmrc
+          echo "@mulesoft:registry=https://registry.npmjs.org/" >> ~/.npmrc
+          echo "@salesforce:registry=https://registry.npmjs.org/" >> ~/.npmrc
+          echo "always-auth=false" >> ~/.npmrc
+          echo "strict-ssl=true" >> ~/.npmrc
+          npm config list
+      - name: Install Playwright browsers
+        run: |
+          npm install -g playwright@1.40.1
+          npx playwright install chromium firefox webkit --with-deps
       - name: Install dependencies
-        run: npm ci
+        run: |
+          npm install -g npm@10.2.4
+          npm install --no-audit --registry https://registry.npmjs.org/ --no-shrinkwrap
       - name: Run tests
         run: npm test
   test_win:
@@ -43,22 +56,36 @@ jobs:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
         with:
-          node-version: 14
-      - uses: microsoft/playwright-github-action@v1
-      - uses: actions/cache@v1
+          node-version: 18
+      - uses: actions/cache@v3
         with:
           path: ~/.npm
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
             ${{ runner.os }}-node-
+      - name: Setup npm config
+        run: |
+          echo "registry=https://registry.npmjs.org/" > $env:USERPROFILE\.npmrc
+          echo "@advanced-rest-client:registry=https://registry.npmjs.org/" >> $env:USERPROFILE\.npmrc
+          echo "@mulesoft:registry=https://registry.npmjs.org/" >> $env:USERPROFILE\.npmrc
+          echo "@salesforce:registry=https://registry.npmjs.org/" >> $env:USERPROFILE\.npmrc
+          echo "always-auth=false" >> $env:USERPROFILE\.npmrc
+          echo "strict-ssl=true" >> $env:USERPROFILE\.npmrc
+          npm config list
+      - name: Install Playwright browsers
+        run: |
+          npm install -g playwright@1.40.1
+          npx playwright install chromium firefox webkit --with-deps
       - name: Install dependencies
-        run: npm ci
+        run: |
+          npm install -g npm@10.2.4
+          npm install --no-audit --registry https://registry.npmjs.org/ --no-shrinkwrap
       - name: Run tests
         run: npm test
   tag:
     name: "Publishing release"
     if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master'
-    needs: 
+    needs:
       - test_linux
       - test_win
     runs-on: ubuntu-latest
@@ -69,15 +96,27 @@ jobs:
           fetch-depth: 0
       - uses: actions/setup-node@v2
         with:
-          node-version: '14.x'
-          registry-url: 'https://registry.npmjs.org'
-      - uses: actions/cache@v1
+          node-version: '18.x'
+          registry-url: 'https://registry.npmjs.org/'
+      - uses: actions/cache@v3
         with:
           path: ~/.npm
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
             ${{ runner.os }}-node-
-      - run: npm install
+      - name: Setup npm config
+        run: |
+          echo "registry=https://registry.npmjs.org/" > ~/.npmrc
+          echo "@advanced-rest-client:registry=https://registry.npmjs.org/" >> ~/.npmrc
+          echo "@mulesoft:registry=https://registry.npmjs.org/" >> ~/.npmrc
+          echo "@salesforce:registry=https://registry.npmjs.org/" >> ~/.npmrc
+          echo "always-auth=false" >> ~/.npmrc
+          echo "strict-ssl=true" >> ~/.npmrc
+          npm config list
+      - name: Install dependencies
+        run: |
+          npm install -g npm@10.2.4
+          npm install --no-audit --registry https://registry.npmjs.org/ --no-shrinkwrap
       - name: Read version from package.json
         uses: culshaw/read-package-node-version-actions@v1
         id: package-node-version

@@ -2,6 +2,5 @@ coverage/
 test/
 demo/
 tsconfig.json
-web-test-runner.config.mjs
 .*
 *.config.*

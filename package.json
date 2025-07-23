@@ -1,7 +1,7 @@
 {
   "name": "@advanced-rest-client/icons",
   "description": "An icons set for the Advanced REST client application",
-  "version": "4.0.0",
+  "version": "4.0.1",
   "license": "Apache-2.0",
   "main": "index.js",
   "module": "index.js",
@@ -28,13 +28,15 @@
     "@advanced-rest-client/arc-demo-helper": "^5.0.1",
     "@open-wc/eslint-config": "^6.0.0",
     "@open-wc/testing": "^3.0.1",
-    "@web/dev-server": "^0.1.25",
-    "@web/test-runner": "^0.13.20",
-    "@web/test-runner-playwright": "^0.8.8",
+    "@web/dev-server": "^0.4.6",
+    "@web/test-runner": "^0.18.0",
+    "@web/test-runner-commands": "^0.9.0",
+    "@web/test-runner-core": "^0.12.0",
     "eslint": "^8.0.1",
     "eslint-config-prettier": "^8.3.0",
     "husky": "^7.0.2",
-    "lint-staged": "^11.2.3"
+    "lint-staged": "^11.2.3",
+    "playwright": "^1.40.1"
   },
   "scripts": {
     "start": "web-dev-server --app-index demo/index.html --node-resolve --open --watch --root-dir .",
@@ -43,9 +45,9 @@
     "lint:types": "tsc",
     "lint": "npm run lint:eslint",
     "format": "npm run format:eslint",
-    "test": "web-test-runner test/**/*.test.js --coverage --node-resolve --playwright --browsers chromium firefox webkit",
-    "test:watch": "web-test-runner test/**/*.test.js --node-resolve --watch --playwright --browsers chromium",
-    "gen:wc": "wca analyze \"*.js\" --outFile custom-elements.json"
+    "test": "web-test-runner --config web-test-runner.config.mjs",
+    "test:watch": "web-test-runner --config web-test-runner.config.mjs --watch",
+    "gen:wc": "wca analyze src --format json --outFile custom-elements.json"
   },
   "eslintConfig": {
     "extends": [
